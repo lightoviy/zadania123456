@@ -1,9 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tabela</title>
+<meta charset="UTF-8">
+<title>Tabela HTML</title>
+<style>
+    body {
+        color: red;
+    }
+
+    .modelKarty {
+        color: purple;
+    }
+
+    .taktowanie {
+        color: blue;
+    }
+
+    .RAM {
+        color: aqua;
+    }
+
+    .SZYNA {
+        color: pink;
+    }
+
+    .chlodzenie {
+        color: green;
+    }
+</style>
 </head>
 <body>
+<table border=2 style="border-color:rgb(154, 30, 179);">
+    <caption>Model Karty Graficznych - Sudak Maksym 2Fg2</caption>
+    <thead>
+        <tr style="background-color:rgb(156, 194, 230);">
+            <th>Model karty graficznej</th>
+            <th>Taktowanie bazowe</th>
+            <th>Rozmiar pamięci</th>
+            <th>Szyna pamięci</th>
+            <th>Typ chłodzenia</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="background-color:rgb(156, 194, 230);">
+            <td class="modelKarty">NVIDIA GeForce RTX 2070 Super</td>
+            <td class="taktowanie">1605 MHz</td>
+            <td class="RAM">8 GB GDDR5</td>
+            <td class="SZYNA" rowspan="3">256-bit</td>
+            <td class="chlodzenie">Wentylator</td>
+        </tr>
+        <tr style="background-color:rgb(126, 172, 237);">
+            <td class="modelKarty">AMD Radeon RX 580</td>
+            <td class="taktowanie">1257 MHz</td>
+            <td class="RAM">8 GB GDDR5</td>
+            <td class="chlodzenie">Chłodzenie cieczą</td>
+        </tr>
+        <tr style="background-color:rgb(70, 115, 179);">
+            <td class="modelKarty">NVIDIA GeForce RTX 2080</td>
+            <td class="taktowanie">1515 MHz</td>
+            <td class="RAM">8 GB GDDR6</td>
+            <td class="chlodzenie">Wentylator i chłodzenie cieczą</td>
+        </tr>
+        <tr style="background-color:rgb(16, 56, 94);">
+            <td class="modelKarty">NVIDIA GeForce RTX 3060</td>
+            <td class="taktowanie">1320 MHz</td>
+            <td class="RAM">12 GB GDDR6</td>
+            <td class="SZYNA">192-bit</td>
+            <td class="chlodzenie">Wentylator</td>
+        </tr>
+        <tr style="background-color:rgb(4, 34, 77);">
+            <td class="modelKarty">NVIDIA GeForce RTX 3080</td>
+            <td class="taktowanie">1440 MHz</td>
+            <td class="RAM">10 GB GDDR6X</td>
+            <td class="SZYNA" rowspan="3">320-bit</td>
+            <td class="chlodzenie">Wentylator</td>
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>
